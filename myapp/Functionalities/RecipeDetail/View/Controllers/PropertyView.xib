@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="17156" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17126"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="PropertyView" customModule="myapp" customModuleProvider="target">
+            <connections>
+                <outlet property="contentView" destination="IWg-mw-RhY" id="EzD-jR-1bE"/>
+                <outlet property="descriptionLabel" destination="gjI-em-WZQ" id="KKK-Op-9wm"/>
+                <outlet property="titleLabel" destination="avi-ib-92Q" id="GoP-Up-wKd"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="IWg-mw-RhY" userLabel="Content View" customClass="FloatingPaymentView">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="50"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <subviews>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Propertie" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="avi-ib-92Q">
+                    <rect key="frame" x="0.0" y="10" width="375" height="17"/>
+                    <fontDescription key="fontDescription" name="AvenirNext-Bold" family="Avenir Next" pointSize="15"/>
+                    <color key="textColor" red="0.066666666669999999" green="0.066666666669999999" blue="0.062745098040000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalCompressionResistancePriority="751" text="Description" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gjI-em-WZQ">
+                    <rect key="frame" x="0.0" y="32" width="375" height="18"/>
+                    <fontDescription key="fontDescription" name="AvenirNext-Regular" family="Avenir Next" pointSize="13"/>
+                    <color key="textColor" red="0.3333382607" green="0.33332449199999997" blue="0.33333384989999998" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="gjI-em-WZQ" secondAttribute="trailing" id="KCH-CD-dXj"/>
+                <constraint firstItem="gjI-em-WZQ" firstAttribute="top" secondItem="avi-ib-92Q" secondAttribute="bottom" constant="5" id="KOu-f9-N0z"/>
+                <constraint firstAttribute="trailing" secondItem="avi-ib-92Q" secondAttribute="trailing" id="XHQ-qA-aDR"/>
+                <constraint firstAttribute="bottom" secondItem="gjI-em-WZQ" secondAttribute="bottom" id="bCL-cM-zzf"/>
+                <constraint firstItem="avi-ib-92Q" firstAttribute="leading" secondItem="IWg-mw-RhY" secondAttribute="leading" id="fgj-A2-uJW"/>
+                <constraint firstItem="gjI-em-WZQ" firstAttribute="leading" secondItem="IWg-mw-RhY" secondAttribute="leading" id="lyu-wh-gii"/>
+                <constraint firstItem="avi-ib-92Q" firstAttribute="top" secondItem="IWg-mw-RhY" secondAttribute="top" constant="10" id="uLC-D2-Tsd"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <point key="canvasLocation" x="103" y="606"/>
+        </view>
+    </objects>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

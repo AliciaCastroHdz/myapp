@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="17156" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17126"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Roboto-Bold.ttf">
+            <string>Roboto-Bold</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="KGk-i7-Jjw" customClass="RecipeTableViewCell" customModule="myapp" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="180"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="180"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Oky-Xg-XDM">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="180"/>
+                    </imageView>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="jka-El-kvg" userLabel="Image overlay">
+                        <rect key="frame" x="0.0" y="130" width="320" height="50"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalCompressionResistancePriority="751" text="Crock Pot Chicken Baked Tacos" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5gR-Yu-T4E">
+                                <rect key="frame" x="5" y="5" width="310" height="17.5"/>
+                                <fontDescription key="fontDescription" name="Roboto-Bold" family="Roboto" pointSize="15"/>
+                                <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" verticalHuggingPriority="251" verticalCompressionResistancePriority="752" text="Chicken" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LqI-Ne-0RG">
+                                <rect key="frame" x="5" y="27.5" width="310" height="17.5"/>
+                                <fontDescription key="fontDescription" name="Roboto-Bold" family="Roboto" pointSize="15"/>
+                                <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="0.5" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="5gR-Yu-T4E" firstAttribute="top" secondItem="jka-El-kvg" secondAttribute="top" constant="5" id="IAm-Un-M0Q"/>
+                            <constraint firstItem="LqI-Ne-0RG" firstAttribute="leading" secondItem="jka-El-kvg" secondAttribute="leading" constant="5" id="Lei-sx-No8"/>
+                            <constraint firstItem="LqI-Ne-0RG" firstAttribute="top" relation="greaterThanOrEqual" secondItem="5gR-Yu-T4E" secondAttribute="bottom" constant="5" id="NIi-C6-C20"/>
+                            <constraint firstAttribute="bottom" secondItem="LqI-Ne-0RG" secondAttribute="bottom" constant="5" id="OzN-hh-8qq"/>
+                            <constraint firstAttribute="height" constant="50" id="dS7-7D-yQ0"/>
+                            <constraint firstAttribute="trailing" secondItem="LqI-Ne-0RG" secondAttribute="trailing" constant="5" id="j2U-Ah-Olb"/>
+                            <constraint firstItem="5gR-Yu-T4E" firstAttribute="leading" secondItem="jka-El-kvg" secondAttribute="leading" constant="5" id="nsg-lz-dpo"/>
+                            <constraint firstAttribute="trailing" secondItem="5gR-Yu-T4E" secondAttribute="trailing" constant="5" id="o9m-uu-ZVZ"/>
+                        </constraints>
+                    </view>
+                    <view alpha="0.0" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="foh-nZ-C1n">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="180"/>
+                        <subviews>
+                            <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" style="medium" translatesAutoresizingMaskIntoConstraints="NO" id="Nt8-4v-8c8">
+                                <rect key="frame" x="150" y="80" width="20" height="20"/>
+                            </activityIndicatorView>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="Nt8-4v-8c8" firstAttribute="centerX" secondItem="foh-nZ-C1n" secondAttribute="centerX" id="9gZ-LS-GcF"/>
+                            <constraint firstItem="Nt8-4v-8c8" firstAttribute="centerY" secondItem="foh-nZ-C1n" secondAttribute="centerY" id="ZTq-h2-tXf"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="trailing" secondItem="jka-El-kvg" secondAttribute="trailing" id="364-f4-0NZ"/>
+                    <constraint firstItem="foh-nZ-C1n" firstAttribute="bottom" secondItem="Oky-Xg-XDM" secondAttribute="bottom" id="4Xk-At-j8P"/>
+                    <constraint firstItem="jka-El-kvg" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="C8n-fM-H2U"/>
+                    <constraint firstItem="foh-nZ-C1n" firstAttribute="top" secondItem="Oky-Xg-XDM" secondAttribute="top" id="Gv2-Hg-LlI"/>
+                    <constraint firstAttribute="trailing" secondItem="Oky-Xg-XDM" secondAttribute="trailing" id="SfK-xN-e5R"/>
+                    <constraint firstAttribute="bottom" secondItem="jka-El-kvg" secondAttribute="bottom" id="Tsc-P9-5qu"/>
+                    <constraint firstAttribute="bottom" secondItem="Oky-Xg-XDM" secondAttribute="bottom" id="gRE-FH-4kX"/>
+                    <constraint firstItem="foh-nZ-C1n" firstAttribute="trailing" secondItem="Oky-Xg-XDM" secondAttribute="trailing" id="gy5-IJ-VwP"/>
+                    <constraint firstItem="Oky-Xg-XDM" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="nQ2-eM-3tN"/>
+                    <constraint firstItem="Oky-Xg-XDM" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="pfP-2e-0Ei"/>
+                    <constraint firstItem="foh-nZ-C1n" firstAttribute="centerX" secondItem="Oky-Xg-XDM" secondAttribute="centerX" id="vTU-bg-CGp"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="categoryLabel" destination="LqI-Ne-0RG" id="uY6-dU-Ch8"/>
+                <outlet property="loadingView" destination="foh-nZ-C1n" id="ctC-MU-QhC"/>
+                <outlet property="nameLabel" destination="5gR-Yu-T4E" id="887-eW-1tI"/>
+                <outlet property="overlayView" destination="jka-El-kvg" id="nMj-e7-pSO"/>
+                <outlet property="picture" destination="Oky-Xg-XDM" id="kIe-2T-hM0"/>
+            </connections>
+            <point key="canvasLocation" x="34.782608695652179" y="140.625"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

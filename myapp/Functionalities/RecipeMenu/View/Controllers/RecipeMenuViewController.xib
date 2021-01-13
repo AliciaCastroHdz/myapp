@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="17156" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17126"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="RecipeMenuViewController" customModule="myapp" customModuleProvider="target">
+            <connections>
+                <outlet property="searchBar" destination="jpF-8T-YtC" id="eAk-GK-n0B"/>
+                <outlet property="tableView" destination="889-30-MXO" id="6ns-dj-db7"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <navigationBar contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="uWt-ne-fDM">
+                    <rect key="frame" x="0.0" y="0.0" width="414" height="44"/>
+                    <items>
+                        <navigationItem title="Recetario" id="F2U-oW-QoN" userLabel="Recetario"/>
+                    </items>
+                </navigationBar>
+                <searchBar contentMode="redraw" placeholder="Search recipes" translatesAutoresizingMaskIntoConstraints="NO" id="jpF-8T-YtC">
+                    <rect key="frame" x="0.0" y="59" width="414" height="56"/>
+                    <textInputTraits key="textInputTraits"/>
+                </searchBar>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="889-30-MXO">
+                    <rect key="frame" x="0.0" y="130" width="414" height="766"/>
+                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                </tableView>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+            <constraints>
+                <constraint firstItem="889-30-MXO" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="4LK-yc-nwK"/>
+                <constraint firstItem="jpF-8T-YtC" firstAttribute="top" secondItem="uWt-ne-fDM" secondAttribute="bottom" constant="15" id="DI4-cd-bft"/>
+                <constraint firstItem="889-30-MXO" firstAttribute="top" secondItem="jpF-8T-YtC" secondAttribute="bottom" constant="15" id="FHh-OH-Bvv"/>
+                <constraint firstItem="uWt-ne-fDM" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" id="UlB-W6-KoX"/>
+                <constraint firstItem="jpF-8T-YtC" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="VkC-1X-XF9"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="uWt-ne-fDM" secondAttribute="trailing" id="dnt-QV-Jb7"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="jpF-8T-YtC" secondAttribute="trailing" id="igW-va-fJ7"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="889-30-MXO" secondAttribute="bottom" id="n9e-kh-2Go"/>
+                <constraint firstItem="uWt-ne-fDM" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="vth-Br-MP1"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="889-30-MXO" secondAttribute="trailing" id="xeY-ff-FRm"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <point key="canvasLocation" x="139" y="129"/>
+        </view>
+    </objects>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
